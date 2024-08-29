@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --color-base: #0000;
+    --color-brand: #F4DFC8;
+    --color-brand2: #F4EAE0;
+    --color-body: #FAF6F0;
+    --font-base: "Bai Jamjuree";
+    --sidebar-width: 240px;
+}
+
+body {
+    background-color: black; /* Ensures body background color is black */
+    color: var(--color-brand2);
+    font-family: var(--font-base), sans-serif;
+    margin: 0; /* Reset default margin */
+}
+
+.navbar-nav {
+    float: right;
+}
+
+.navbar-nav > li {
+    margin-left: 5px; /* Margin between navbar items */
+}
+
+.navbar-nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.navbar-brand {
+    font-weight: 400;
+    color: var(--color-brand); /* Adjust color as needed */
+}
+
+#myCarousel {
+    top: 70px; /* Space between navbar and carousel */
+    width: 1200px; /* Adjust the width as desired */
+    margin: 0 auto; /* Center the carousel horizontally */
+}
+
+#about {
+    padding-top: 100px;
+    padding-bottom: 80px;
+    top: 100px; /* Space between carousel and "About" section */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-brand);
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-body);
+    transition: all 0.4s ease;
+}
+
+a:hover {
+    color: var(--color-base);
+}
+
+/* Base styles for timeline */
+.timeline {
+    position: relative;
+    padding: 20px 0;
+    list-style: none;
+  }
+  
+  .timeline-item {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #ffffff32;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .timeline-item h3 {
+    margin-top: 0;
+    color: var(--color-brand);
+  }
+  
+  .timeline-item p {
+    margin: 5px 0;
+    color: var(--color-body);
+  }
+  
+  /* Optional: Add a timeline line */
+  .timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #dddddd00;
+    left: 20px;
+    margin-left: -1px;
+  }
+  
+/* Container for media */
+.media-container {
+  width: auto; 
+  height: auto; 
+  overflow: visible; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.media-container img, 
+.media-container video {
+  display: block;
+  max-width: none;
+  max-height: none; 
+  width: auto; 
+  height: auto; 
+}
+
+  
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .work-card {
+      margin-bottom: 20px;
+    }
+  }
+
+  #skills {
+    padding: 40px 0;
+}
+
+.skill-card {
+    background: #ffffff32; /* Slightly transparent background */
+    border-radius: 12px; /* Rounded corners */
+    padding: 20px;
+    margin: 10px; /* Margin between each card */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center-align text inside the cards */
+}
+
+.skill-card h3 {
+    color: var(--color-brand);
+    margin-top: 0;
+}
+
+.skill-card p {
+    color: var(--color-body);
+    margin: 0;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    .col-md-3 {
+        margin-bottom: 20px; /* Increased bottom margin for mobile screens */
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  .media-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 12px; /* Rounded corners */
+    align-items: center;
+    overflow: hidden;
+    margin: 10px; /* Margin between each card */
+
+    position: relative;
+
+  }
+
+  .media {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .card-img-top, .media-container video {
+    width: 100%;
+    height: 150px; /* Adjust the height as needed */
+    object-fit: cover;
+    margin: 10px; /* Margin between each card */
+
+  }
+
+  .card-body {
+    padding: 20px;
+  }
